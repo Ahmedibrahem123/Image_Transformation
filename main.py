@@ -18,8 +18,9 @@ plt.imshow(grayscale)
 plt.axis('off')
 plt.title("second")
 plt.show()
-'''# using equalization histogram
-equ = cv.equalizeHist(image)
+
+# using equalization histogram
+'''equ = cv.equalizeHist(image)
 res = np.hstack((image, equ))
 cv.imwrite('NEW2.jpg',res)
 plt.imshow(image)
